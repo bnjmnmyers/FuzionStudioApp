@@ -62,6 +62,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *fiveClassesBtn;
 @property (strong, nonatomic) IBOutlet UIButton *sixClassesBtn;
 @property (strong, nonatomic) IBOutlet UIButton *unlimitedClassesBtn;
+@property (weak, nonatomic) IBOutlet UITextField *tfOtherAmount;
+@property (weak, nonatomic) IBOutlet UITextField *tfDescription;
 
 - (IBAction)pay:(id)sender;
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5207D4C3197DC0BB00B66B87 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5207D4C2197DC0BB00B66B87 /* Parse.framework */; };
 		B5055C75186CBF5A005AB716 /* FuzionStudio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5055C73186CBF5A005AB716 /* FuzionStudio.xcdatamodeld */; };
 		B5055C84186DFD67005AB716 /* launchScreen4InchRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = B5055C83186DFD67005AB716 /* launchScreen4InchRetina.png */; };
 		B5055C86186E003F005AB716 /* homeScreenIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B5055C85186E003F005AB716 /* homeScreenIcon.png */; };
@@ -23,7 +24,6 @@
 		B524E91917DA612800BDB42B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B524E91717DA612800BDB42B /* MainStoryboard.storyboard */; };
 		B524E92A17DA619A00BDB42B /* FS_MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B524E92917DA619A00BDB42B /* FS_MainViewController.m */; };
 		B524E92D17DA634300BDB42B /* FS_InstructorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B524E92C17DA634200BDB42B /* FS_InstructorsViewController.m */; };
-		B53DEB4B1875AE4900C7EF75 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53DEB4A1875AE4900C7EF75 /* Parse.framework */; };
 		B53DEB4E1875AFDB00C7EF75 /* FS_PaymentInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DEB4D1875AFDB00C7EF75 /* FS_PaymentInfoViewController.m */; };
 		B53DEB5D1875BB7200C7EF75 /* FS_DressCodeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DEB5C1875BB7200C7EF75 /* FS_DressCodeTableViewController.m */; };
 		B53DEB691875E79D00C7EF75 /* FS_PolicyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DEB681875E79D00C7EF75 /* FS_PolicyInfoViewController.m */; };
@@ -36,7 +36,7 @@
 		B53DEB80187714EA00C7EF75 /* FS_DressCodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DEB7F187714EA00C7EF75 /* FS_DressCodeCell.m */; };
 		B53DEB831877337800C7EF75 /* FS_LeotardWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DEB821877337800C7EF75 /* FS_LeotardWebViewController.m */; };
 		B55C63631892B15F00BCF2B0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55C63621892B15F00BCF2B0 /* FacebookSDK.framework */; };
-		B594E60A188EDF5C00823028 /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D71B064E188ABE9300032773 /* libPayPalMobile.a */; };
+		B594E60A188EDF5C00823028 /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D71B064E188ABE9300032773 /* libPayPalMobile.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		B594E610188EFD3400823028 /* ImportantDate.m in Sources */ = {isa = PBXBuildFile; fileRef = B594E60F188EFD3400823028 /* ImportantDate.m */; };
 		B594E61C188F032100823028 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B594E61B188F032100823028 /* Reachability.m */; };
 		B5A7698C1891B4F100A5E4AC /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5A7698B1891B4F100A5E4AC /* Settings.bundle */; };
@@ -88,6 +88,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5207D4C2197DC0BB00B66B87 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		B5055C74186CBF5A005AB716 /* FuzionStudio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FuzionStudio.xcdatamodel; sourceTree = "<group>"; };
 		B5055C83186DFD67005AB716 /* launchScreen4InchRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchScreen4InchRetina.png; sourceTree = "<group>"; };
 		B5055C85186E003F005AB716 /* homeScreenIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeScreenIcon.png; sourceTree = "<group>"; };
@@ -111,7 +112,6 @@
 		B524E92917DA619A00BDB42B /* FS_MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FS_MainViewController.m; sourceTree = "<group>"; };
 		B524E92B17DA634200BDB42B /* FS_InstructorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FS_InstructorsViewController.h; sourceTree = "<group>"; };
 		B524E92C17DA634200BDB42B /* FS_InstructorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FS_InstructorsViewController.m; sourceTree = "<group>"; };
-		B53DEB4A1875AE4900C7EF75 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		B53DEB4C1875AFDB00C7EF75 /* FS_PaymentInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FS_PaymentInfoViewController.h; sourceTree = "<group>"; };
 		B53DEB4D1875AFDB00C7EF75 /* FS_PaymentInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FS_PaymentInfoViewController.m; sourceTree = "<group>"; };
 		B53DEB5B1875BB7200C7EF75 /* FS_DressCodeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FS_DressCodeTableViewController.h; sourceTree = "<group>"; };
@@ -207,6 +207,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5207D4C3197DC0BB00B66B87 /* Parse.framework in Frameworks */,
 				D71A3F381890A26F00B14D66 /* libxml2.dylib in Frameworks */,
 				D71B066E188ACD0100032773 /* OpenGLES.framework in Frameworks */,
 				D71B0669188AC97A00032773 /* CoreMedia.framework in Frameworks */,
@@ -224,7 +225,6 @@
 				B5FE2B41185F836000D3712F /* CoreLocation.framework in Frameworks */,
 				B524E90217DA612800BDB42B /* CoreGraphics.framework in Frameworks */,
 				B5FE2B3D185F834600D3712F /* AudioToolbox.framework in Frameworks */,
-				B53DEB4B1875AE4900C7EF75 /* Parse.framework in Frameworks */,
 				B524E8FE17DA612800BDB42B /* UIKit.framework in Frameworks */,
 				B55C63631892B15F00BCF2B0 /* FacebookSDK.framework in Frameworks */,
 				B524E90017DA612800BDB42B /* Foundation.framework in Frameworks */,
@@ -264,6 +264,7 @@
 		B524E8FC17DA612800BDB42B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5207D4C2197DC0BB00B66B87 /* Parse.framework */,
 				B55C63621892B15F00BCF2B0 /* FacebookSDK.framework */,
 				D71B066D188ACD0100032773 /* OpenGLES.framework */,
 				D71B066B188ACCCF00032773 /* libxml2.2.dylib */,
@@ -273,7 +274,6 @@
 				D71B0661188AC6CE00032773 /* CoreVideo.framework */,
 				D71B065F188AC6C500032773 /* CoreMedia.framework */,
 				D71B065D188AC6B900032773 /* AVFoundation.framework */,
-				B53DEB4A1875AE4900C7EF75 /* Parse.framework */,
 				B5FE2B4C185F864500D3712F /* SystemConfiguration.framework */,
 				B5FE2B4A185F863800D3712F /* StoreKit.framework */,
 				B5FE2B48185F863100D3712F /* Security.framework */,
@@ -652,8 +652,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/bmyers/Dropbox/Xcode/FuzionStudio,
+					/Users/bnjmn/Dropbox/Xcode/FuzionStudio,
 					/Users/Ben/Dropbox/Xcode/FuzionStudio,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FuzionStudio/FuzionStudio-Prefix.pch";
@@ -661,7 +662,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/bmyers/Dropbox/Xcode/FuzionStudio/FuzionStudio,
+					/Users/bnjmn/Dropbox/Xcode/FuzionStudio/FuzionStudio,
 					/Users/Ben/Dropbox/Xcode/FuzionStudio/FuzionStudio,
 				);
 				ONLY_ACTIVE_ARCH = NO;
@@ -684,12 +685,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = FuzionStudio/FuzionStudio.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/bmyers/Dropbox/Xcode/FuzionStudio,
+					/Users/bnjmn/Dropbox/Xcode/FuzionStudio,
 					/Users/Ben/Dropbox/Xcode/FuzionStudio,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FuzionStudio/FuzionStudio-Prefix.pch";
@@ -697,7 +699,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/bmyers/Dropbox/Xcode/FuzionStudio/FuzionStudio,
+					/Users/bnjmn/Dropbox/Xcode/FuzionStudio/FuzionStudio,
 					/Users/Ben/Dropbox/Xcode/FuzionStudio/FuzionStudio,
 				);
 				ONLY_ACTIVE_ARCH = NO;

@@ -190,7 +190,7 @@
 	NSDictionary *allDataDictionary = [NSJSONSerialization JSONObjectWithData:webData options:kNilOptions error:nil];
 	NSDictionary *feed = [allDataDictionary objectForKey:@"feed"];
 	NSDictionary *videosDictionary = [feed objectForKey:@"videos"];
-    NSLog(@"%@", videosDictionary);
+    NSLog(@"Videos: %@", allDataDictionary);
 	for (NSDictionary *diction in videosDictionary) {
 		if ([diction objectForKey:@"videoID"]) {
             Video *video = [NSEntityDescription insertNewObjectForEntityForName:@"Video" inManagedObjectContext:_managedObjectContext];

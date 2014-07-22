@@ -144,7 +144,12 @@
 			_tuition = @"161.00";
 			_description = @"Unlimited classes per month";
 			break;
+		case 7:
+			_tuition = _tfOtherAmount.text;
+			_description = _tfDescription.text;
+			break;
 	}
+    
 	payment.amount = [[NSDecimalNumber alloc] initWithString:_tuition];
 	payment.currencyCode = @"USD";
 	payment.shortDescription = _description;
