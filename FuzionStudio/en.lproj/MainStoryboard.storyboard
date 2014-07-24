@@ -5,6 +5,20 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="Qtm-li-0P1">
+            <objects>
+                <viewController id="K0a-Zw-EEd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bew-Z2-MPQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D2H-S2-Cu6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1395" y="-782"/>
+        </scene>
         <!--Important Date Table View Controller-->
         <scene sceneID="l04-wi-iAO">
             <objects>
@@ -15,13 +29,14 @@
                         <color key="backgroundColor" red="0.40784317260000003" green="0.062745101750000004" blue="0.058823533359999999" alpha="1" colorSpace="deviceRGB"/>
                         <color key="sectionIndexTrackingBackgroundColor" red="0.40784317260000003" green="0.062745101750000004" blue="0.058823533359999999" alpha="1" colorSpace="deviceRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="102" id="vc9-Xj-xbl">
+                            <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="102" id="vc9-Xj-xbl">
                                 <rect key="frame" x="0.0" y="22" width="320" height="102"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vc9-Xj-xbl" id="uYb-vX-c2D">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -36,7 +51,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tFh-cS-H3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881" y="-93"/>
+            <point key="canvasLocation" x="1395" y="-117"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="kSa-u5-L2X">
@@ -359,15 +374,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" id="u1t-3L-Flv">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pj6-JG-S93">
-                                <rect key="frame" x="0.0" y="393" width="320" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                                <state key="normal" image="callButton.png">
+                                <rect key="frame" x="230" y="380" width="70" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="callBtn.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -375,19 +385,8 @@
                                     <action selector="callFuzion:" destination="hEj-dr-QYa" eventType="touchUpInside" id="jx0-nK-riB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DQq-WM-2f8">
-                                <rect key="frame" x="-1" y="29" width="222" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="payTuitionButton.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="payTuition" destination="hEj-dr-QYa" eventType="touchUpInside" id="06m-oq-T7L"/>
-                                </connections>
-                            </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ecc-BK-gRg">
-                                <rect key="frame" x="281" y="28" width="30" height="30"/>
+                                <rect key="frame" x="281" y="13" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="settings.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -397,9 +396,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CRO-rU-7zN">
-                                <rect key="frame" x="0.0" y="428" width="106" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" image="tab1.png">
+                                <rect key="frame" x="230" y="266" width="70" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="datesBtn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -407,9 +406,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CfC-Jb-RqS">
-                                <rect key="frame" x="107" y="428" width="106" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                                <state key="normal" image="tab2.png">
+                                <rect key="frame" x="20" y="266" width="70" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <state key="normal" image="scheduleBtn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -417,13 +416,33 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0ie-pC-hsE">
-                                <rect key="frame" x="214" y="428" width="106" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <state key="normal" image="tab3.png">
+                                <rect key="frame" x="20" y="380" width="70" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="infoBtn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="iGP-vZ-Qvx" kind="modal" id="786-ge-WaI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qob-FE-M0d">
+                                <rect key="frame" x="125" y="266" width="70" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <state key="normal" image="tuitionBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="payTuition" destination="hEj-dr-QYa" eventType="touchUpInside" id="a3u-fb-2CN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zbf-91-Not">
+                                <rect key="frame" x="125" y="380" width="70" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="videosBtn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="K0a-Zw-EEd" kind="modal" id="WMZ-g7-kFJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -432,7 +451,7 @@
                     <navigationItem key="navigationItem" id="MxT-hj-7Y6"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="btnPayTuition" destination="DQq-WM-2f8" id="yqb-hg-6TO"/>
+                        <outlet property="btnPayTuition" destination="qob-FE-M0d" id="Dfz-oc-U71"/>
                         <outlet property="btnSettings" destination="Ecc-BK-gRg" id="6y1-d9-JUa"/>
                         <segue destination="W52-RV-bhe" kind="modal" identifier="segueToPayTuition" id="DuK-jP-Nn4"/>
                         <segue destination="Xym-Ec-mGV" kind="modal" identifier="segueToUserSetup" id="a6n-mX-SoI"/>
@@ -502,7 +521,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLp-T6-Keh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881" y="1213"/>
+            <point key="canvasLocation" x="1395" y="2549"/>
         </scene>
         <!--Payment Info View Controller - Payment Info-->
         <scene sceneID="g6J-Hl-22v">
@@ -824,17 +843,18 @@
     </scenes>
     <resources>
         <image name="background.png" width="640" height="1136"/>
-        <image name="callButton.png" width="640" height="70"/>
+        <image name="callBtn.png" width="140" height="190"/>
         <image name="check.png" width="84" height="75"/>
+        <image name="datesBtn.png" width="140" height="190"/>
         <image name="dollarSymbol.png" width="30" height="30"/>
+        <image name="infoBtn.png" width="140" height="190"/>
         <image name="launchScreen4InchRetina.png" width="640" height="1136"/>
         <image name="leotard.png" width="30" height="30"/>
-        <image name="payTuitionButton.png" width="437" height="56"/>
         <image name="policy.png" width="30" height="30"/>
-        <image name="settings.png" width="58" height="60"/>
-        <image name="tab1.png" width="212" height="279"/>
-        <image name="tab2.png" width="212" height="279"/>
-        <image name="tab3.png" width="212" height="279"/>
+        <image name="scheduleBtn.png" width="140" height="190"/>
+        <image name="settings.png" width="30" height="30"/>
+        <image name="tuitionBtn.png" width="140" height="190"/>
+        <image name="videosBtn.png" width="140" height="190"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -842,7 +862,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="9s3-MA-j24"/>
+        <segue reference="Ug7-d4-Jx1"/>
         <segue reference="DuK-jP-Nn4"/>
         <segue reference="a6n-mX-SoI"/>
     </inferredMetricsTieBreakers>

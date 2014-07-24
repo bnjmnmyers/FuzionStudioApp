@@ -64,9 +64,10 @@
 	
 	_fetchRequest = [[NSFetchRequest alloc]init];
 	_entity = [NSEntityDescription entityForName:@"DressCode" inManagedObjectContext:[self managedObjectContext]];
+    _subDivizionIDSort = [NSSortDescriptor sortDescriptorWithKey:@"subDivizionID" ascending:YES];
 	_divizionIDSort = [NSSortDescriptor sortDescriptorWithKey:@"divizionID" ascending:YES];
 	_divizionSort = [NSSortDescriptor sortDescriptorWithKey:@"divizion" ascending:YES];
-	_sortDescriptors = [[NSArray alloc]initWithObjects:_divizionIDSort, _divizionSort, nil];
+	_sortDescriptors = [[NSArray alloc]initWithObjects:_divizionSort, _divizionIDSort, _subDivizionIDSort, nil];
 	[_fetchRequest setEntity:_entity];
 	[_fetchRequest setSortDescriptors:_sortDescriptors];
 	

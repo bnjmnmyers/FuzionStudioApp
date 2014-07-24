@@ -18,8 +18,9 @@
 @property (strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (strong, nonatomic) NSFetchRequest *fetchRequest;
 @property (strong, nonatomic) NSEntityDescription *entity;
-@property (strong, nonatomic) NSSortDescriptor *divizionIDSort;
 @property (strong, nonatomic) NSSortDescriptor *divizionSort;
+@property (strong, nonatomic) NSSortDescriptor *divizionIDSort;
+@property (strong, nonatomic) NSSortDescriptor *subDivizionIDSort;
 @property (strong, nonatomic) NSArray *sortDescriptors;
 
 @property (strong, nonatomic) IBOutlet UITableView *dressCodeTableView;

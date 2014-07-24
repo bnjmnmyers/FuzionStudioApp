@@ -62,6 +62,11 @@
 	// Do any additional setup after loading the view.
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return true;
+}
+
 -(void)viewWillAppear:(BOOL)animated{
 	[self.navigationController setNavigationBarHidden:YES animated:animated];
 	[self setNeedsStatusBarAppearanceUpdate];
