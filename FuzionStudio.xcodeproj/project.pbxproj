@@ -14,7 +14,6 @@
 		52107FFF197FF2C1001A1B63 /* scheduleBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 52107FFA197FF2C1001A1B63 /* scheduleBtn.png */; };
 		52108000197FF2C1001A1B63 /* tuitionBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 52107FFB197FF2C1001A1B63 /* tuitionBtn.png */; };
 		52108002197FFDB1001A1B63 /* videosBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 52108001197FFDB1001A1B63 /* videosBtn.png */; };
-		5210800619802617001A1B63 /* YouTubeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5210800519802617001A1B63 /* YouTubeData.m */; };
 		B5055C75186CBF5A005AB716 /* FuzionStudio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5055C73186CBF5A005AB716 /* FuzionStudio.xcdatamodeld */; };
 		B5055C84186DFD67005AB716 /* launchScreen4InchRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = B5055C83186DFD67005AB716 /* launchScreen4InchRetina.png */; };
 		B5055C86186E003F005AB716 /* homeScreenIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B5055C85186E003F005AB716 /* homeScreenIcon.png */; };
@@ -102,8 +101,6 @@
 		52107FFA197FF2C1001A1B63 /* scheduleBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scheduleBtn.png; sourceTree = "<group>"; };
 		52107FFB197FF2C1001A1B63 /* tuitionBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tuitionBtn.png; sourceTree = "<group>"; };
 		52108001197FFDB1001A1B63 /* videosBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videosBtn.png; sourceTree = "<group>"; };
-		5210800419802617001A1B63 /* YouTubeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeData.h; sourceTree = "<group>"; };
-		5210800519802617001A1B63 /* YouTubeData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeData.m; sourceTree = "<group>"; };
 		B5055C74186CBF5A005AB716 /* FuzionStudio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FuzionStudio.xcdatamodel; sourceTree = "<group>"; };
 		B5055C83186DFD67005AB716 /* launchScreen4InchRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchScreen4InchRetina.png; sourceTree = "<group>"; };
 		B5055C85186E003F005AB716 /* homeScreenIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeScreenIcon.png; sourceTree = "<group>"; };
@@ -250,15 +247,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		52108003198025FA001A1B63 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				5210800419802617001A1B63 /* YouTubeData.h */,
-				5210800519802617001A1B63 /* YouTubeData.m */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 		B524E8F117DA612800BDB42B = {
 			isa = PBXGroup;
 			children = (
@@ -318,7 +306,6 @@
 		B524E90517DA612800BDB42B /* FuzionStudio */ = {
 			isa = PBXGroup;
 			children = (
-				52108003198025FA001A1B63 /* Models */,
 				D71B064D188ABE7800032773 /* PayPalMobile */,
 				B5055C87186E0565005AB716 /* FuzionStudio.entitlements */,
 				B5342FF6186CB12400360832 /* Data */,
@@ -559,7 +546,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5210800619802617001A1B63 /* YouTubeData.m in Sources */,
 				D7FE99791894154100E77CE9 /* User.m in Sources */,
 				D7CB77BD1864F40F00993255 /* FS_CurrentScheduleCell.m in Sources */,
 				B53DEB80187714EA00C7EF75 /* FS_DressCodeCell.m in Sources */,
