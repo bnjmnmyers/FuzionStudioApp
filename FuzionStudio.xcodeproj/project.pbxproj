@@ -34,9 +34,6 @@
 		B53DEB4E1875AFDB00C7EF75 /* FS_PaymentInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DEB4D1875AFDB00C7EF75 /* FS_PaymentInfoViewController.m */; };
 		B53DEB5D1875BB7200C7EF75 /* FS_DressCodeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DEB5C1875BB7200C7EF75 /* FS_DressCodeTableViewController.m */; };
 		B53DEB691875E79D00C7EF75 /* FS_PolicyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DEB681875E79D00C7EF75 /* FS_PolicyInfoViewController.m */; };
-		B53DEB6D1876017500C7EF75 /* leotard.png in Resources */ = {isa = PBXBuildFile; fileRef = B53DEB6B1876017500C7EF75 /* leotard.png */; };
-		B53DEB71187602E500C7EF75 /* policy.png in Resources */ = {isa = PBXBuildFile; fileRef = B53DEB70187602E500C7EF75 /* policy.png */; };
-		B53DEB75187604F600C7EF75 /* dollarSymbol.png in Resources */ = {isa = PBXBuildFile; fileRef = B53DEB74187604F600C7EF75 /* dollarSymbol.png */; };
 		B53DEB78187605B600C7EF75 /* FS_ClassDetailsTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DEB77187605B600C7EF75 /* FS_ClassDetailsTabBarController.m */; };
 		B53DEB7B187701C900C7EF75 /* DressCode.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DEB7A187701C900C7EF75 /* DressCode.m */; };
 		B53DEB7D187709E400C7EF75 /* DressCodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B53DEB7C187709E400C7EF75 /* DressCodeCell.xib */; };
@@ -45,12 +42,16 @@
 		B55C63631892B15F00BCF2B0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55C63621892B15F00BCF2B0 /* FacebookSDK.framework */; };
 		B594E60A188EDF5C00823028 /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D71B064E188ABE9300032773 /* libPayPalMobile.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		B594E610188EFD3400823028 /* ImportantDate.m in Sources */ = {isa = PBXBuildFile; fileRef = B594E60F188EFD3400823028 /* ImportantDate.m */; };
-		B594E61C188F032100823028 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B594E61B188F032100823028 /* Reachability.m */; };
 		B5A7698C1891B4F100A5E4AC /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5A7698B1891B4F100A5E4AC /* Settings.bundle */; };
 		B5CE6C1A183E54FC000BD510 /* FS_InstructorsDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CE6C19183E54FC000BD510 /* FS_InstructorsDetailsViewController.m */; };
 		B5DCC02418807FE700DF4D07 /* ImportantDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DCC02318807FE700DF4D07 /* ImportantDateCell.xib */; };
 		B5DCC02A1880812400DF4D07 /* FS_ImportantDateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC0291880812400DF4D07 /* FS_ImportantDateTableViewController.m */; };
 		B5DCC02D1880814600DF4D07 /* FS_ImportantDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DCC02C1880814600DF4D07 /* FS_ImportantDateCell.m */; };
+		B5EBA87D199BD410001A26AC /* dollarSymbol@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5EBA87A199BD410001A26AC /* dollarSymbol@2x.png */; };
+		B5EBA87E199BD410001A26AC /* leotard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5EBA87B199BD410001A26AC /* leotard@2x.png */; };
+		B5EBA87F199BD410001A26AC /* policy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5EBA87C199BD410001A26AC /* policy@2x.png */; };
+		B5EBA883199BD679001A26AC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EBA882199BD679001A26AC /* Reachability.m */; };
+		B5EBA886199BD9E0001A26AC /* CoreDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EBA885199BD9E0001A26AC /* CoreDataHandler.m */; };
 		B5FE2B3D185F834600D3712F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FE2B3C185F834600D3712F /* AudioToolbox.framework */; };
 		B5FE2B3F185F834B00D3712F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FE2B3E185F834B00D3712F /* CFNetwork.framework */; };
 		B5FE2B41185F836000D3712F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FE2B40185F836000D3712F /* CoreLocation.framework */; };
@@ -133,9 +134,6 @@
 		B53DEB5C1875BB7200C7EF75 /* FS_DressCodeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FS_DressCodeTableViewController.m; sourceTree = "<group>"; };
 		B53DEB671875E79D00C7EF75 /* FS_PolicyInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FS_PolicyInfoViewController.h; sourceTree = "<group>"; };
 		B53DEB681875E79D00C7EF75 /* FS_PolicyInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FS_PolicyInfoViewController.m; sourceTree = "<group>"; };
-		B53DEB6B1876017500C7EF75 /* leotard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leotard.png; sourceTree = "<group>"; };
-		B53DEB70187602E500C7EF75 /* policy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = policy.png; sourceTree = "<group>"; };
-		B53DEB74187604F600C7EF75 /* dollarSymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dollarSymbol.png; sourceTree = "<group>"; };
 		B53DEB76187605B600C7EF75 /* FS_ClassDetailsTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FS_ClassDetailsTabBarController.h; sourceTree = "<group>"; };
 		B53DEB77187605B600C7EF75 /* FS_ClassDetailsTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FS_ClassDetailsTabBarController.m; sourceTree = "<group>"; };
 		B53DEB79187701C900C7EF75 /* DressCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DressCode.h; path = ../DressCode.h; sourceTree = "<group>"; };
@@ -148,8 +146,6 @@
 		B55C63621892B15F00BCF2B0 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		B594E60E188EFD3400823028 /* ImportantDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImportantDate.h; path = ../ImportantDate.h; sourceTree = "<group>"; };
 		B594E60F188EFD3400823028 /* ImportantDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImportantDate.m; path = ../ImportantDate.m; sourceTree = "<group>"; };
-		B594E61A188F032100823028 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		B594E61B188F032100823028 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		B5A7698B1891B4F100A5E4AC /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		B5A7698E1891B59100A5E4AC /* Script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Script.sh; sourceTree = "<group>"; };
 		B5CE6C18183E54FC000BD510 /* FS_InstructorsDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FS_InstructorsDetailsViewController.h; sourceTree = "<group>"; };
@@ -159,6 +155,13 @@
 		B5DCC0291880812400DF4D07 /* FS_ImportantDateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FS_ImportantDateTableViewController.m; path = ../FS_ImportantDateTableViewController.m; sourceTree = "<group>"; };
 		B5DCC02B1880814600DF4D07 /* FS_ImportantDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FS_ImportantDateCell.h; sourceTree = "<group>"; };
 		B5DCC02C1880814600DF4D07 /* FS_ImportantDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FS_ImportantDateCell.m; sourceTree = "<group>"; };
+		B5EBA87A199BD410001A26AC /* dollarSymbol@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dollarSymbol@2x.png"; sourceTree = "<group>"; };
+		B5EBA87B199BD410001A26AC /* leotard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leotard@2x.png"; sourceTree = "<group>"; };
+		B5EBA87C199BD410001A26AC /* policy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "policy@2x.png"; sourceTree = "<group>"; };
+		B5EBA881199BD679001A26AC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		B5EBA882199BD679001A26AC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		B5EBA884199BD9E0001A26AC /* CoreDataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHandler.h; sourceTree = "<group>"; };
+		B5EBA885199BD9E0001A26AC /* CoreDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHandler.m; sourceTree = "<group>"; };
 		B5FE2B3C185F834600D3712F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B5FE2B3E185F834B00D3712F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		B5FE2B40185F836000D3712F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -253,6 +256,8 @@
 		52108003198025FA001A1B63 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B5EBA884199BD9E0001A26AC /* CoreDataHandler.h */,
+				B5EBA885199BD9E0001A26AC /* CoreDataHandler.m */,
 				5210800419802617001A1B63 /* YouTubeData.h */,
 				5210800519802617001A1B63 /* YouTubeData.m */,
 			);
@@ -318,6 +323,7 @@
 		B524E90517DA612800BDB42B /* FuzionStudio */ = {
 			isa = PBXGroup;
 			children = (
+				B5EBA880199BD65D001A26AC /* Utilities */,
 				52108003198025FA001A1B63 /* Models */,
 				D71B064D188ABE7800032773 /* PayPalMobile */,
 				B5055C87186E0565005AB716 /* FuzionStudio.entitlements */,
@@ -348,8 +354,6 @@
 		B5342FF5186CB11300360832 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B594E61A188F032100823028 /* Reachability.h */,
-				B594E61B188F032100823028 /* Reachability.m */,
 				D71B0653188ABFDF00032773 /* ZZMainViewController.h */,
 				D71B0654188ABFDF00032773 /* ZZMainViewController.m */,
 				D71B0655188ABFDF00032773 /* ZZFlipsideViewController.h */,
@@ -412,6 +416,15 @@
 			name = Licenses;
 			sourceTree = "<group>";
 		};
+		B5EBA880199BD65D001A26AC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B5EBA881199BD679001A26AC /* Reachability.h */,
+				B5EBA882199BD679001A26AC /* Reachability.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		D71B064D188ABE7800032773 /* PayPalMobile */ = {
 			isa = PBXGroup;
 			children = (
@@ -426,6 +439,9 @@
 		D7D4F502185FD4100075DCBF /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B5EBA87A199BD410001A26AC /* dollarSymbol@2x.png */,
+				B5EBA87B199BD410001A26AC /* leotard@2x.png */,
+				B5EBA87C199BD410001A26AC /* policy@2x.png */,
 				52108001197FFDB1001A1B63 /* videosBtn.png */,
 				52107FF7197FF2C1001A1B63 /* callBtn.png */,
 				52107FF8197FF2C1001A1B63 /* datesBtn.png */,
@@ -445,9 +461,6 @@
 				D74D96571894989600063B86 /* tab3.png */,
 				D7D33AD71884748100A963A1 /* spotlightIcon.png */,
 				D7BD889B1884623300A82DDE /* callButton.png */,
-				B53DEB74187604F600C7EF75 /* dollarSymbol.png */,
-				B53DEB70187602E500C7EF75 /* policy.png */,
-				B53DEB6B1876017500C7EF75 /* leotard.png */,
 				D749B08D1874CC7900990C0E /* background.png */,
 				B5055C85186E003F005AB716 /* homeScreenIcon.png */,
 				B5055C83186DFD67005AB716 /* launchScreen4InchRetina.png */,
@@ -529,19 +542,19 @@
 				D749B08E1874CC7900990C0E /* background.png in Resources */,
 				B53DEB7D187709E400C7EF75 /* DressCodeCell.xib in Resources */,
 				B5055C84186DFD67005AB716 /* launchScreen4InchRetina.png in Resources */,
-				B53DEB6D1876017500C7EF75 /* leotard.png in Resources */,
 				D7D33AE3188475D500A963A1 /* homeScreenIcon29x29.png in Resources */,
 				D74D965418948D3700063B86 /* settings.png in Resources */,
-				B53DEB75187604F600C7EF75 /* dollarSymbol.png in Resources */,
 				B524E91217DA612800BDB42B /* Default.png in Resources */,
 				B5055C86186E003F005AB716 /* homeScreenIcon.png in Resources */,
 				B524E91417DA612800BDB42B /* Default@2x.png in Resources */,
 				52107FFD197FF2C1001A1B63 /* datesBtn.png in Resources */,
+				B5EBA87E199BD410001A26AC /* leotard@2x.png in Resources */,
+				B5EBA87D199BD410001A26AC /* dollarSymbol@2x.png in Resources */,
 				D7D4F50B1860F93B0075DCBF /* logo.png in Resources */,
+				B5EBA87F199BD410001A26AC /* policy@2x.png in Resources */,
 				B5A7698C1891B4F100A5E4AC /* Settings.bundle in Resources */,
 				D74D96591894989600063B86 /* tab2.png in Resources */,
 				52107FFE197FF2C1001A1B63 /* infoBtn.png in Resources */,
-				B53DEB71187602E500C7EF75 /* policy.png in Resources */,
 				B524E91617DA612800BDB42B /* Default-568h@2x.png in Resources */,
 				52107FFC197FF2C1001A1B63 /* callBtn.png in Resources */,
 				D74D965A1894989600063B86 /* tab3.png in Resources */,
@@ -568,6 +581,7 @@
 				D7B7DC2518626C700024F1F6 /* FS_CurrentScheduleTableViewController.m in Sources */,
 				B53DEB78187605B600C7EF75 /* FS_ClassDetailsTabBarController.m in Sources */,
 				B53DEB7B187701C900C7EF75 /* DressCode.m in Sources */,
+				B5EBA886199BD9E0001A26AC /* CoreDataHandler.m in Sources */,
 				B53DEB691875E79D00C7EF75 /* FS_PolicyInfoViewController.m in Sources */,
 				B524E90C17DA612800BDB42B /* main.m in Sources */,
 				B5DCC02D1880814600DF4D07 /* FS_ImportantDateCell.m in Sources */,
@@ -579,12 +593,12 @@
 				D71B0658188ABFDF00032773 /* ZZFlipsideViewController.m in Sources */,
 				B524E92A17DA619A00BDB42B /* FS_MainViewController.m in Sources */,
 				D749B07E1874919A00990C0E /* DanceClass.m in Sources */,
-				B594E61C188F032100823028 /* Reachability.m in Sources */,
 				B53DEB831877337800C7EF75 /* FS_LeotardWebViewController.m in Sources */,
 				B594E610188EFD3400823028 /* ImportantDate.m in Sources */,
 				B524E92D17DA634300BDB42B /* FS_InstructorsViewController.m in Sources */,
 				B5DCC02A1880812400DF4D07 /* FS_ImportantDateTableViewController.m in Sources */,
 				D71B0657188ABFDF00032773 /* ZZMainViewController.m in Sources */,
+				B5EBA883199BD679001A26AC /* Reachability.m in Sources */,
 				D734F7E918C23F3200B2BF32 /* Video.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

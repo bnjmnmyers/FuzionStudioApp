@@ -19,12 +19,10 @@
 @property (strong, nonatomic) NSSortDescriptor *sort;
 @property (strong, nonatomic) NSArray *sortDescriptors;
 @property (strong, nonatomic) NSArray *fetchedObjects;
-
-@property (assign, nonatomic) BOOL isConnected;
 @property (strong, nonatomic) IBOutlet UIButton *btnSettings;
 @property (strong, nonatomic) IBOutlet UIButton *btnPayTuition;
 
 - (IBAction)callFuzion:(id)sender;
 - (IBAction)payTuition;
-- (IBAction) turnTorchOn;
+- (IBAction)turnTorchOn;
 @end

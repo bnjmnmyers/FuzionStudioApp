@@ -42,15 +42,16 @@
 	id delegate = [[UIApplication sharedApplication]delegate];
 	self.managedObjectContext = [delegate managedObjectContext];
 	
-	_isConnected = TRUE;
+	// Instantiations
+    internetReachable = [[Reachability alloc] init];
 	
-	[self checkOnlineConnection];
+	[internetReachable checkConnection];
+	
     [self loadUser];
     if ([_fetchedObjects count] > 0) {
         _btnSettings.hidden = NO;
     }
-	if (_isConnected == TRUE) {
-		[self getInstructors];
+	if (internetReachable.isConnected) {
 		[self getClasses];
 		[self getDates];
 		[self getDressCodes];
@@ -83,13 +84,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)getInstructors{
-	
-	[self clearEntity:@"Instructor"];
+- (void)getInstructors
+{
 	
 	NSString *urlString = [NSString stringWithFormat:@"http://www.fuzionstudio.net/test/includes/_appJSON.php"];
 	NSURL *url = [NSURL URLWithString:urlString];
 	NSData *webData = [NSData dataWithContentsOfURL:url];
+	
+	if (webData.length > 0) {
+		[self clearEntity:@"Instructor"];
+	}
 	
 	NSDictionary *allDataDictionary = [NSJSONSerialization JSONObjectWithData:webData options:kNilOptions error:nil];
 	NSDictionary *feed = [allDataDictionary objectForKey:@"feed"];
@@ -107,13 +111,15 @@
 	}
 }
 
-- (void)getClasses{
-	
-	[self clearEntity:@"DanceClass"];
-	
+- (void)getClasses
+{
 	NSString *urlString = [NSString stringWithFormat:@"http://www.fuzionstudio.net/test/includes/_appJSON.php?getClasses=1"];
 	NSURL *url = [NSURL URLWithString:urlString];
 	NSData *webData = [NSData dataWithContentsOfURL:url];
+	
+	if (webData.length > 0) {
+		[self clearEntity:@"DanceClass"];
+	}
 	
 	NSDictionary *allDataDictionary = [NSJSONSerialization JSONObjectWithData:webData options:kNilOptions error:nil];
 	NSDictionary *feed = [allDataDictionary objectForKey:@"feed"];
@@ -133,12 +139,15 @@
 	}
 }
 
-- (void)getDressCodes{
-	[self clearEntity:@"DressCode"];
-	
+- (void)getDressCodes
+{
 	NSString *urlString = [NSString stringWithFormat:@"http://www.fuzionstudio.net/test/includes/_appJSON.php?getDressCode=1"];
 	NSURL *url = [NSURL URLWithString:urlString];
 	NSData *webData = [NSData dataWithContentsOfURL:url];
+	
+	if (webData.length > 0) {
+		[self clearEntity:@"DressCode"];
+	}
 	
 	NSDictionary *allDataDictionary = [NSJSONSerialization JSONObjectWithData:webData options:kNilOptions error:nil];
 	NSDictionary *feed = [allDataDictionary objectForKey:@"feed"];
@@ -159,12 +168,15 @@
 
 }
 
-- (void)getDates{
-	[self clearEntity:@"ImportantDate"];
-	
+- (void)getDates
+{
 	NSString *urlString = [NSString stringWithFormat:@"http://www.fuzionstudio.net/test/includes/_appJSON.php?getDates=1"];
 	NSURL *url = [NSURL URLWithString:urlString];
 	NSData *webData = [NSData dataWithContentsOfURL:url];
+	
+	if (webData.length > 0) {
+		[self clearEntity:@"ImportantDate"];
+	}
 	
 	NSDictionary *allDataDictionary = [NSJSONSerialization JSONObjectWithData:webData options:kNilOptions error:nil];
 	NSDictionary *feed = [allDataDictionary objectForKey:@"feed"];
@@ -185,12 +197,15 @@
 	
 }
 
-- (void)getVideos{
-    [self clearEntity:@"Video"];
-    
+- (void)getVideos
+{
     NSString *urlString = [NSString stringWithFormat:@"http://www.fuzionstudio.net/test/includes/_appJSON.php?getVideos=1"];
 	NSURL *url = [NSURL URLWithString:urlString];
 	NSData *webData = [NSData dataWithContentsOfURL:url];
+	
+	if (webData.length > 0) {
+		[self clearEntity:@"Video"];
+	}
 	
 	NSDictionary *allDataDictionary = [NSJSONSerialization JSONObjectWithData:webData options:kNilOptions error:nil];
 	NSDictionary *feed = [allDataDictionary objectForKey:@"feed"];
@@ -206,7 +221,8 @@
 	}
 }
 
--(void)loadUser{
+-(void)loadUser
+{
     _fetchRequest = [[NSFetchRequest alloc]init];
     _entity = [NSEntityDescription entityForName:@"User" inManagedObjectContext:[self managedObjectContext]];
     [_fetchRequest setEntity:_entity];
@@ -234,12 +250,14 @@
 	}
 }
 
-- (IBAction)callFuzion:(id)sender {
+- (IBAction)callFuzion:(id)sender
+{
 	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:8652094372"]];
 }
 
 
-- (IBAction) turnTorchOn {
+- (IBAction) turnTorchOn
+{
     // check if flashlight available
 	AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
 	
@@ -256,7 +274,8 @@
 	}
 }
 
-- (IBAction)payTuition{
+- (IBAction)payTuition
+{
     [self loadUser];
     if ([_fetchedObjects count] > 0) {
         [self performSegueWithIdentifier:@"segueToPayTuition" sender:nil];
@@ -264,27 +283,6 @@
     else{
         [self performSegueWithIdentifier:@"segueToUserSetup" sender:nil];
     }
-}
-
-- (void) checkOnlineConnection {
-
-    internetReachable = [Reachability reachabilityWithHostname:@"www.google.com"];
-    
-    // Internet is not reachable
-    // NOTE - change "reachableBlock" to "unreachableBlock"
-    
-    internetReachable.unreachableBlock = ^(Reachability*reach)
-    {
-		_isConnected = FALSE;
-    };
-	
-	internetReachable.reachableBlock = ^(Reachability*reach)
-    {
-		_isConnected = TRUE;
-    };
-    
-    [internetReachable startNotifier];
-    
 }
 
 @end
